@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professor Thomaz Maia</title>
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --verde-escuro: #1b3d2f;
+      --verde-claro: #00cc66;
+      --fundo-claro: #f0f4f3;
+      --branco: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--fundo-claro);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--verde-escuro);
+      color: var(--branco);
+      padding: 20px 40px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--branco);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--verde-claro);
+    }
+
+    main {
+      padding: 60px 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      color: var(--verde-escuro);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--verde-escuro);
+      display: inline-block;
+    }
+
+    .foto-professor {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .hobbies-list {
+      list-style: none;
+      padding-left: 0;
+      line-height: 2;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: var(--branco);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: var(--verde-escuro);
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: var(--verde-escuro);
+      color: var(--branco);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: var(--verde-claro);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Prof. Thomaz Maia</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#disciplinas">Disciplinas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre" class="section">
+      <h2>Sobre o Professor</h2>
+      <img src="https://avatars.githubusercontent.com/u/20629250?v=4" alt="Foto do Professor Thomaz Maia" class="foto-professor" />
+      <p>Thomaz Maia de Almeida atualmente é Professor Assistente do Instituto Federal do Ceará (IFCE) - Campus Maranguape. Possui Doutorado em Engenharia de Teleinformática pela Universidade Federal do Ceará (2019), Mestrado em Engenharia de Teleinformática pela Universidade Federal do Ceará (2012) e Pós-graduação em Dispositivos Móveis pela Faculdade 7 de Setembro (2014). Tem interesses em Visão Computacional, Processamento Digital de Imagens, Reconhecimento de Padrões e Inteligência Artificial.</p>
+    </section>
+
+    <section id="hobbies" class="section">
+      <h2>Hobbies</h2>
+      <ul class="hobbies-list">
+        <li>🏃 Corrida</li>
+        <li>🚴 Ciclismo</li>
+        <li>🏊‍♂️ Natação</li>
+        <li>📷 Fotografia de paisagens</li>
+      </ul>
+    </section>
+
+    <section id="disciplinas" class="section">
+      <h2>Disciplinas</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://images.prismic.io/voitto-blog/73616bf9-ef8b-4f2a-918f-ab1d85788045_marketing+%286%29+%281%29.png" alt="Introdução a Programação" />
+          <h3>Introdução à Programação</h3>
+          <p>Ensina os conceitos básicos da programação.</p>
+        </div>
+        <div class="card">
+          <img src="https://blog.botcity.dev/wp-content/uploads/2023/12/capa-artigo-ferramentas-python.jpg" alt="Programação Estruturada" />
+          <h3>Programação Estruturada</h3>
+          <p>Ensina a linguagem de programação Python.</p>
+        </div>
+        <div class="card">
+          <img src="https://neilpatel.com/wp-content/uploads/2019/09/codigos-html-para-paginas-web-1-1200x675.webp" alt="WEB 1" />
+          <h3>WEB 1</h3>
+          <p>Como desenvolver sites e criar páginas web.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <p>Entre em contato pelo e-mail: <a href="mailto:thomaz@ifce.edu.br">thomaz@ifce.edu.br</a></p>
+  </footer>
+
+</body>
+</html>
